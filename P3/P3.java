@@ -15,10 +15,10 @@ public class P3 {
         // 플랫폼 이름은 외부 설정값에서 온다고 가정
         String os = "Windows"; // 또는 "Mac"
 
-        P3UIFactory factory = P3GUIFactoryProvider.getFactory(os);
+        P3UIFactory pc = P3GUIFactoryProvider.getFactory(os);
 
-        P3Button button = factory.createButton();
-        P3Checkbox checkbox = factory.createCheckbox();
+        P3Button button = pc.createButton();
+        P3Checkbox checkbox = pc.createCheckbox();
 
         button.render();
         checkbox.render();
